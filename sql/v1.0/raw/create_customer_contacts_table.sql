@@ -1,7 +1,9 @@
 use ECommerceWH;
 go 
 
---Create customer contacts table with the necessary metadata
+--Raw representation of our Customer Contacts
+-- Source columns are preserved without business transformations.
+-- Ingestion metadata is appended by the data ingestion process.
 
 create table raw.customer_contacts
 (

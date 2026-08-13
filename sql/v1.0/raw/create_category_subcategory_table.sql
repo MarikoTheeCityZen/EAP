@@ -1,7 +1,9 @@
 use ECommerceWH;
 go
 
---Create subcategories table with ingestion metadata
+--Raw representation of our Category:Subcategories
+-- Source columns are preserved without business transformations.
+-- Ingestion metadata is appended by the data ingestion process.
 
 create table raw.subcategories
 (

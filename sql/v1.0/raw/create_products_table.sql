@@ -1,7 +1,9 @@
 use ECommerceWH;
 go 
 
---Create products table with relevant metadata
+--Raw representation of our Products
+-- Source columns are preserved without business transformations.
+-- Ingestion metadata is appended by the data ingestion process.
 
 create table raw.products
 (

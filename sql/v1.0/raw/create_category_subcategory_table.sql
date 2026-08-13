@@ -3,7 +3,7 @@ go
 
 --Create subcategories table with ingestion metadata
 
-create table subcategories
+create table raw.subcategories
 (
 category_subcategory nvarchar(50),
 --metadata

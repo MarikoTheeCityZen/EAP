@@ -1,7 +1,9 @@
 use ECommerceWH;
 go
 
---Create user details table containing extra information( Phone, CreditLimit) about our customers and ingestion metadata
+--Raw representation of our User/Customer Details
+-- Source columns are preserved without business transformations.
+-- Ingestion metadata is appended by the data ingestion process.
 
 create table raw.user_details
 (

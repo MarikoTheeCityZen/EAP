@@ -1,7 +1,9 @@
 use ECommerceWH;
 go
 
---Create Address table with the ingestion metadata
+--Raw representation of our Addresses
+-- Source columns are preserved without business transformations.
+-- Ingestion metadata is appended by the data ingestion process.
 
 create table  raw.address
 (

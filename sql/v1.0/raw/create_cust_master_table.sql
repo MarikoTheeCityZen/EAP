@@ -1,7 +1,9 @@
 use ECommerceWH;
 go
 
---Creating customers table to hold raw data as ingested from our source with metadata
+--Raw representation of our Customers
+-- Source columns are preserved without business transformations.
+-- Ingestion metadata is appended by the data ingestion process.
 
 create table raw.cust_master
 (
